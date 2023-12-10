@@ -8,6 +8,6 @@ int main() {
 
 
  while (i<=n) {
-  
+  int space = n - i;
  }
 }
