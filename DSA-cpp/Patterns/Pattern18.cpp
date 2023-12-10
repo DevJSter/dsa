@@ -19,6 +19,7 @@ int main() {
    j++;
   } 
   cout<<endl;
+  i++;
 
  }
 }
