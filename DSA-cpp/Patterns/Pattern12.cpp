@@ -17,5 +17,6 @@ int main() {
   }
   cout<<endl;
   i++;
+ 
  }
  }
