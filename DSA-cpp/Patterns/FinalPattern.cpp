@@ -10,23 +10,31 @@ int main() {
 
  while (i<=n) {
   int space = n-i;
-  //Print karo spaces ko
+  //Print karo spaces ko {Pahla traingle}
   while (space) {
    cout<<" ";
    space--;
   }
-  //Print karao Pahla traingle
+  //Print karao Dusra traingle
   int j =1;
   while (j<=i) {
    cout << j ;
    j++;
   }
-  //Print karo Dusra traingle
-  int k = 1;
-  while (k<=i-1) {
-   cout << i-k;
-   k++;
+  //Print karo Teesra traingle
+  // int k = 1;
+  // while (k<=i-1) {
+  //  cout << i-k;
+  //  k++;
+  // } //Ek tarika
+
+  //Dusra tarika
+  int k = i-1;
+  while (k) {
+   cout << k;
+   k--;
   }
+  
   cout<<endl;
   i++;
 
