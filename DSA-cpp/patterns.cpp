@@ -11,7 +11,7 @@ int main() {
     while (i<=n) {
     
      while (j<=n) {
-      cout << i <<endl;
+      cout << i ;
       j++;
      }
      cout<<endl;
