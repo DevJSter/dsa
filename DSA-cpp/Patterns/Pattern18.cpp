@@ -13,6 +13,7 @@ int main() {
    cout<<" ";
    space--;
   }
+  int j = 1;
 
  }
 }
