@@ -8,13 +8,13 @@ int main() {
 
 
  while (i<=n) {
-  int space = n - i;
+  int space = i-1;
   while (space) {
    cout<<" ";
    space--;
   }
   int j = 1;
-  while(j<=n) {
+  while(j<=n-i) {
    cout<< "*";
    j++;
   } 
