@@ -13,11 +13,6 @@ int main() {
    cout<<" ";
    space--;
   }
-  int j = 1;
-  while (j<=i) {
-   cout<<"*";
-   j++;
-  }
-  
+
  }
 }
