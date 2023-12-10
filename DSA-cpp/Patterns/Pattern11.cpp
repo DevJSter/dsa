@@ -18,8 +18,4 @@ int main() {
   cout<<endl;
   i++;
   
-  }
-  cout<<endl;
-  i++;
-
  }
