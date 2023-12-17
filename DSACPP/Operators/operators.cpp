@@ -2,11 +2,11 @@
 using namespace std;
 
 int main () {
- // int a=1, b;
- // b= a++;
- // int c = ++a;
- // cout << b;
- // cout << c;
+ int a=1, b;
+ b= a++;
+ int c = ++a;
+ cout << b;
+ cout << c;
 int n;
  cin >> n;
 
