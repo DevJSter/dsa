@@ -113,7 +113,7 @@ int main() {
     cout << "Enter the Number" << endl;
     cin >> amt;
 
-    int notes[] = { 100, 50, 20, 10, 5, 2, 1};
+    int notes[] = { 100, 50, 20, 1};
     int n = sizeof(notes) / sizeof(int);
 
     int i = 0;
