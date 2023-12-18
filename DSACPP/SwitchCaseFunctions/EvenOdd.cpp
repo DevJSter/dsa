@@ -16,9 +16,10 @@ int a;
 cin >> a;
 
 if (isEven(a)) {
- cout << "Even" <<endl;
+ cout << "Number is Even" <<endl;
 }
 else {
- cout << "Odd" <<endl;
+ cout << "Number is Odd" <<endl;
+}
 
 }
