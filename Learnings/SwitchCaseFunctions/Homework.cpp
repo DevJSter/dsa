@@ -32,4 +32,23 @@ using namespace std;
 //  return 0;
 // }
 
+// Arithmatic progresssion (nth term finding)
 
+// int ap (int a , int d , int n) {
+//   if (n==1) {
+//     return a;
+//   }
+//   int ans = ap(a+d , d , n-1);
+//   return ans;
+// }
+
+
+// int main() {
+//  int a , d , n ;
+//  cout << "Enter the first term , common difference and the nth term" << endl;
+//  cin >> a >> d >> n ;
+ 
+//  int ans = ap(a , d , n);
+//  cout << ans << endl;
+//  return 0;
+// }
