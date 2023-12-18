@@ -1,10 +1,10 @@
 #include <iostream> 
 using namespace std;
 
-// int update (int a) {
-//   int ans =  a * a;
-//   return ans ;
-// }
+int update (int a) {
+  int ans =  a * a;
+  return ans ;
+}
 
 // int main () {
 //   int a = 10;
@@ -15,13 +15,13 @@ using namespace std;
 
 
 // Fibonacci Number till n
-// int fibo (int n) {
-//   if (n==0 || n==1) {
-//     return n;
-//   }
-//   int ans = fibo(n-1) + fibo(n-2);
-//   return ans;
-// }
+int fibo (int n) {
+  if (n==0 || n==1) {
+    return n;
+  }
+  int ans = fibo(n-1) + fibo(n-2);
+  return ans;
+}
 
 // int main() {
 //  int n , a , b ;
@@ -34,13 +34,13 @@ using namespace std;
 
 // Arithmatic progresssion (nth term finding)
 
-// int ap (int a , int d , int n) {
-//   if (n==1) {
-//     return a;
-//   }
-//   int ans = ap(a+d , d , n-1);
-//   return ans;
-// }
+int ap (int a , int d , int n) {
+  if (n==1) {
+    return a;
+  }
+  int ans = ap(a+d , d , n-1);
+  return ans;
+}
 
 
 // int main() {
@@ -52,3 +52,26 @@ using namespace std;
 //  cout << ans << endl;
 //  return 0;
 // }
+
+
+
+// Geometric Progression (nth term finding)
+
+int gp (int a , int r , int n) {
+  if (n==1) {
+    return a;
+  }
+  int ans = gp(a*r , r , n-1);
+  return ans;
+}
+
+
+int main() {
+ int a , r , n ;
+ cout << "Enter the first term , common ratio and the nth term" << endl;
+ cin >> a >> r >> n ;
+ 
+ int ans = gp(a , r , n);
+ cout << ans << endl;
+ return 0;
+}
