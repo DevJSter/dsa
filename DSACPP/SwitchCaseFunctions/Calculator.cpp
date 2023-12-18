@@ -7,10 +7,8 @@ int main() {
 
  cout << "Enter the value of a" <<endl;
  cin >> a;
-
  cout << "Enter the value of b" <<endl;
  cin >> b;
-
  cout << "Enter the operation to be performed" <<endl;
  cin >> op;
  switch (op) {
