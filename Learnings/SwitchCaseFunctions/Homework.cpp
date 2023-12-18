@@ -110,10 +110,10 @@ using namespace std;
 
 int main() {
     int amt;
-    cout << "Enter the Number" << endl;
+    cout << "Enter the Amount Number" << endl;
     cin >> amt;
 
-    int notes[] = { 100, 50, 20, 1 };
+    int notes[] = { 2000, 500, 200, 100, 50, 20, 10, 5, 2, 1 };
     int n = sizeof(notes) / sizeof(int);
 
     int i = 0;
@@ -125,9 +125,15 @@ int main() {
 
             // Using switch statement to print the result
             switch (note) {
+                case 2000:
+                case 500:
+                case 200:
                 case 100:
                 case 50:
                 case 20:
+                case 10:
+                case 5:
+                case 2:
                 case 1:
                     cout << note << " * " << count << endl;
                     break;
@@ -136,7 +142,7 @@ int main() {
                     break;
             }
         }
-       i++;
+        i++;
     }
 
     return 0;
