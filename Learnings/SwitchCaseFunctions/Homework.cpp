@@ -78,28 +78,29 @@ int gp (int a , int r , int n) {
 
 
 //Same thing with while loop
-int main() {
- int amt ;
- cout << "Enter the Number" <<endl;
- cin >> amt;
 
- int notes[] = {2000 , 500 , 200 , 100 , 50 , 20 , 10 , 5 , 2 , 1};
- int n = sizeof(notes)/sizeof(int);
+// int main() {
+//  int amt ;
+//  cout << "Enter the Number" <<endl;
+//  cin >> amt;
 
- int i = 0;
- while (amt > 0) {
-   int note = notes[i];
-   if (note <= amt) {
-     int count = amt/note;
-     amt = amt - count*note;
-     cout << note << " * " << count << endl;
-   }
-   i++;
- }
- return 0;
+//  int notes[] = {2000 , 500 , 200 , 100 , 50 , 20 , 10 , 5 , 2 , 1};
+//  int n = sizeof(notes)/sizeof(int);
+
+//  int i = 0;
+//  while (amt > 0) {
+//    int note = notes[i];
+//    if (note <= amt) {
+//      int count = amt/note;
+//      amt = amt - count*note;
+//      cout << note << " * " << count << endl;
+//    }
+//    i++;
+//  }
+//  return 0;
 
 
-}
+// }
 
 
 //Same thing with switch case
