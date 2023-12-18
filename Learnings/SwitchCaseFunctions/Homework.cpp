@@ -136,7 +136,7 @@ int main() {
                     break;
             }
         }
-        i++;
+       i++;
     }
 
     return 0;
