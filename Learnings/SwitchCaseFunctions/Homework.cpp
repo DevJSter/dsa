@@ -125,15 +125,9 @@ int main() {
 
             // Using switch statement to print the result
             switch (note) {
-                case 2000:
-                case 500:
-                case 200:
                 case 100:
                 case 50:
                 case 20:
-                case 10:
-                case 5:
-                case 2:
                 case 1:
                     cout << note << " * " << count << endl;
                     break;
