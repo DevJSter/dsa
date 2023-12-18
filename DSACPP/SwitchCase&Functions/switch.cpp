@@ -14,3 +14,5 @@ case '2' : cout << "Second" <<endl;
           break;
  } 
 }
+
+//continue statement skips the next line of iteration of the loop
