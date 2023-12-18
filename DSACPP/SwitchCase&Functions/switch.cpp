@@ -2,10 +2,13 @@
 using namespace std;
 
 int main () {
- int n = 2;
- switch (n) {
+ int ch = '2';
+ switch (ch) {
  case 1: cout << "First" <<endl;
          break;
+
+case '2' : cout << "Second" <<endl;
+         break; 
  case 2: cout << "Second" <<endl;
          break;
 
