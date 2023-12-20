@@ -6,7 +6,7 @@ int printArray (int theArray[], int sizeOfArray) {
          cout << theArray[x] << endl;
      }
  }
- 
+
 int main() {
  
 
