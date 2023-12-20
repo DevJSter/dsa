@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int main() {
- int printArray (int theArray[], int sizeOfArray){
+int printArray (int theArray[], int sizeOfArray) {
      for(int x=0; x<sizeOfArray; x++) {
          cout << theArray[x] << endl;
      }
- }; 
+ }
+ 
+int main() {
+ 
 
  int a[3] = {1,2,3};
  int b[3] = {4,5,6};
@@ -19,7 +21,7 @@ int main() {
  }
 
  cout << "Array b: " << endl;
- 
+
  printArray(b, 3);
 
  return 0;
