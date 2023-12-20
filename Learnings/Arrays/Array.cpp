@@ -19,6 +19,7 @@ int main() {
  }
 
  cout << "Array b: " << endl;
+ 
  printArray(b, 3);
 
  return 0;
