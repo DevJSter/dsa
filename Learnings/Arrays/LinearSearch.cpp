@@ -11,7 +11,7 @@ bool isPresent(int arr[], int n ,int key) {
 }
 
 int main() {
- int ar[5] = {1, 2, 3, 4, 5 ,-18, 100};
+ int ar[10] = {1, 2, 3, 4, 5 , 100};
 
  //whether 1 is present or not
 isPresent(ar ,7, 1) ? cout << "Present" << endl : cout << "Not Present" << endl;
