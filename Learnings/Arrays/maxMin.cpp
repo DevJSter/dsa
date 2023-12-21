@@ -38,6 +38,8 @@ int main() {
         cout << arr[i] << " ";
     }
 
+    cout << endl;
+
     cout << "Max: " << getMax(arr, size) << endl;
     cout << "Min: " << getMin(arr, size) << endl;
 
