@@ -38,5 +38,6 @@ int main() {
  }
 
  cout << "Max: " << getMax(arr, size) ;
+ cout << "Min: " << getMin(arr, size) ;
 
 }
