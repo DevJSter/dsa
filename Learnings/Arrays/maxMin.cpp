@@ -3,7 +3,7 @@ using namespace std;
 
 int getMin( int arr[] , int size) {
  int min = INT8_MAX;
- for (int i =0 ; i <= size ; i++) {
+ for (int i = 0 ; i <= size ; i++) {
   if (arr[i] < min) {
    min = arr[i];
   }
@@ -34,7 +34,7 @@ int main() {
  }
 
  for (int i = 0; i<size ; i++) {
-  cout << arr[i] << endl;
+  cout << "Entered Numbers are : " << arr[i] << " " ;
  }
 
  cout << "Max: " << getMax(arr, size) ;
