@@ -23,3 +23,39 @@
 
 // 1 <= path.length <= 104
 // path[i] is either 'N', 'S', 'E', or 'W'.
+class Solution {
+public:
+    bool isPathCrossing(std::string path) {
+        std::unordered_set<std::string> visited;
+        visited.insert("0,0");
+        
+        int x = 0, y = 0;
+        
+        for (char move : path) {
+            switch (move) {
+                case 'N':
+                    y++;
+                    break;
+                case 'S':
+                    y--;
+                    break;
+                case 'E':
+                    x++;
+                    break;
+                case 'W':
+                    x--;
+                    break;
+            }
+            
+            std::string currentPos = std::to_string(x) + "," + std::to_string(y);
+            
+            if (visited.count(currentPos) > 0) {
+                return true; 
+            }
+            
+            visited.insert(currentPos);
+        }
+        
+        return false; 
+    }
+};
