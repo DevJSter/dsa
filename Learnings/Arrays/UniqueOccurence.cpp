@@ -24,3 +24,9 @@
 // -1000 <= arr[i] <= 1000
 
 
+#include <iostream>
+using namespace std;
+
+int main(){
+ 
+}
