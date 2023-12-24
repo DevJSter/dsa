@@ -26,7 +26,6 @@ void sortOneZero(int arr[] , int n) {
    right--;
   }
  }
-
 }
 
 int main() {
