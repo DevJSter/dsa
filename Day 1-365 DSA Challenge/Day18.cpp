@@ -38,3 +38,9 @@
 
 // 1 <= s.length <= 100
 // s contains only digits and may contain leading zero(s).
+// class Solution {
+// public:
+//     int numDecodings(string s) {
+        
+//     }
+// };
