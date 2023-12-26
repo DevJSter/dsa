@@ -38,9 +38,30 @@
 
 // 1 <= s.length <= 100
 // s contains only digits and may contain leading zero(s).
-// class Solution {
-// public:
-//     int numDecodings(string s) {
-        
-//     }
-// };
+class Solution {
+public:
+    int numDecodings(string s) {
+
+        if (s.length() == 0 || s[0] == '0') return 0;
+        int count1 = 1, count2 = 1;
+
+        for (int i = 1; i < s.length(); i++) {
+            int d = s[i] - '0'; // Current digit
+            int dd = (s[i - 1] - '0') * 10 + d; // Two-digit number
+
+            int currentCount = 0;
+            if (d > 0) {
+                currentCount += count2;
+            }
+
+            if (dd >= 10 && dd <= 26) {
+                currentCount += count1;
+            }
+
+            count1 = count2;
+            count2 = currentCount;
+        }
+
+        return count2;
+    }
+};
