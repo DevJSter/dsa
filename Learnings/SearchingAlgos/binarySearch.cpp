@@ -23,7 +23,7 @@ int binarySearch(int arr[], int size, int key) {
 
 int main() {
     int arrEven[] = {13, 19, 27, 34, 56, 64};
-    int evenIndex = binarySearch(arrEven, 6, 34);
+    int evenIndex = binarySearch(arrEven, 6, 64);
     cout << "The index of the key is : " << evenIndex << endl;
 
     return 0; 
