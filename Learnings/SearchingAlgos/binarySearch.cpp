@@ -22,11 +22,7 @@ int binarySearch(int arr[], int size, int key) {
 
 int main() {
     int arrEven[] = {13, 19, 27, 34, 56, 64};
-    int key;
-    cout << "Enter the key to be searched : ";
-    cin >> key;
-
-    int evenIndex = binarySearch(arrEven, 6, 12);
+    int evenIndex = binarySearch(arrEven, 6, 34);
     cout << "The index of the key is : " << evenIndex << endl;
 
     return 0; 
