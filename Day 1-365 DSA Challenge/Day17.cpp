@@ -37,3 +37,20 @@ public:
         return result;
     }
 };
+#include <iostream>
+
+int main() {
+    Solution solution;
+    std::vector<int> nums1 = {1, 2, 2, 1};
+    std::vector<int> nums2 = {2, 2};
+    std::vector<int> result = solution.intersection(nums1, nums2);
+
+    // Print the result
+    std::cout << "Output: [";
+    for (int num : result) {
+        std::cout << num << " ";
+    }
+    std::cout << "]" << std::endl;
+
+    return 0;
+}
