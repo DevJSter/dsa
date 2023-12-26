@@ -26,7 +26,7 @@ int main() {
     cout << "Enter the key to be searched : ";
     cin >> key;
 
-    int evenIndex = binarySearch(arrEven, 6, key);
+    int evenIndex = binarySearch(arrEven, 6, 12);
     cout << "The index of the key is : " << evenIndex << endl;
 
     return 0; 
