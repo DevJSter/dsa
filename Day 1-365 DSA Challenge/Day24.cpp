@@ -27,6 +27,10 @@
 // 1 <= words.length <= 100
 // 1 <= words[i].length <= 100
 // words[i] consists of lowercase English letters.
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+using namespace std;
 
 class Solution {
 public:
