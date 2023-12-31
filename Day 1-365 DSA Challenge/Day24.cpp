@@ -27,3 +27,24 @@ Constraints:
 1 <= words.length <= 100
 1 <= words[i].length <= 100
 words[i] consists of lowercase English letters.
+
+class Solution {
+public:
+    bool makeEqual(std::vector<std::string>& words) {
+        // Count the frequency of each character
+        std::unordered_map<char, int> charFreq;
+        for (const std::string& word : words) {
+            for (char c : word) {
+                charFreq[c]++;
+            }
+        }
+        int totalWords = words.size();
+        for (const auto& entry : charFreq) {
+            if (entry.second % totalWords != 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+};
