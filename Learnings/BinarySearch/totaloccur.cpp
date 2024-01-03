@@ -7,12 +7,12 @@ int left(int arr[], int n, int key) {
     while (s <= e) {
         int mid = s + (e - s) / 2; 
         if (arr[mid] == key) {
-            ans++;
+            ans =mid;
             e = mid - 1;
         } else if (arr[mid] < key) {
-            e = mid - 1;
-        } else if (arr[mid] > key) {
             s = mid + 1;
+        } else { // Fix here
+            e = mid - 1;
         }
     }
 
@@ -25,12 +25,12 @@ int right(int arr[], int n, int key) {
     while (s <= e) {
         int mid = s + (e - s) / 2; 
         if (arr[mid] == key) {
-            ans++;
+            ans =mid;
             s = mid + 1;
         } else if (arr[mid] < key) {
-            e = mid - 1;
-        } else if (arr[mid] > key) {
             s = mid + 1;
+        } else { // Fix here
+            e = mid - 1;
         }
     }
 
@@ -38,8 +38,8 @@ int right(int arr[], int n, int key) {
 }
 
 int main() {
-    int even[5] = { 3, 3, 3 , 3, 5};
-    int finalans = right(even, 5, 3) + left(even, 5, 3) ;
-    cout << "Total Number of Occurences of 3 is " << finalans << endl;
+    int even[10] = {1,2, 3, 3, 3, 3, 3, 3, 6, 7};
+    int finalans = right(even, 10, 3) - left(even, 10, 3);
+    cout << "Total Number of Occurrences of 3 is " << finalans << endl;
     return 0;
 }
