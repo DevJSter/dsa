@@ -25,5 +25,4 @@ int main () {
 int arr[8] = {4,5,6,7,0,1,2,3,};
 cout << "Pivot is " << getPivot(arr, 5) << endl;
 
-
 }
