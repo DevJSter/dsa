@@ -27,3 +27,27 @@
 
 
 
+class Solution {
+public:
+    bool halvesAreAlike(std::string s) {
+        // Function to count the number of vowels in a given string
+        auto countVowels = [](const std::string& str) {
+            std::unordered_set<char> vowels{'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+            int count = 0;
+            for (char c : str) {
+                if (vowels.count(c) > 0) {
+                    count++;
+                }
+            }
+            return count;
+        };
+
+        // Split the string into two halves
+        int mid = s.length() / 2;
+        std::string a = s.substr(0, mid);
+        std::string b = s.substr(mid);
+
+        // Count vowels in both halves and compare
+        return countVowels(a) == countVowels(b);
+    }
+};
