@@ -103,3 +103,45 @@ public:
     }
 };
 
+//Approach 3
+
+#include <vector>
+#include <unordered_map>
+#include <set>
+
+class Solution {
+public:
+    vector<vector<int>> findWinners(vector<vector<int>>& matches) {
+        // Create unordered maps to store wins and losses for each player
+        unordered_map<int, int> wins, losses;
+
+        // Iterate through the matches to update wins and losses
+        for (const auto& match : matches) {
+            wins[match[0]]++;
+            losses[match[1]]++;
+        }
+
+        // Create sets to store players with 0 losses and 1 loss
+        set<int> noLoss, oneLoss;
+
+        // Iterate through wins map to find players with 0 losses
+        for (const auto& entry : wins) {
+            if (entry.second > 0 && losses[entry.first] == 0) {
+                noLoss.insert(entry.first);
+            }
+        }
+
+        // Iterate through losses map to find players with 1 loss
+        for (const auto& entry : losses) {
+            if (entry.second == 1) {
+                oneLoss.insert(entry.first);
+            }
+        }
+
+        // Construct the result vector
+        vector<vector<int>> result = {vector<int>(noLoss.begin(), noLoss.end()),
+                                      vector<int>(oneLoss.begin(), oneLoss.end())};
+
+        return result;
+    }
+};
