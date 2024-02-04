@@ -17,4 +17,12 @@ public class Solution {
      return t[n];
  }
 
+ public static void main(String[] args) {
+     Solution solution = new Solution();
+     int[] arr = {1, 4, 1, 5, 7, 3, 6, 1, 9};
+     int k = 3;
+     int result = solution.maxSumAfterPartitioning(arr, k);
+     System.out.println("Maximum Sum after Partitioning: " + result);
+ }
 }
+
