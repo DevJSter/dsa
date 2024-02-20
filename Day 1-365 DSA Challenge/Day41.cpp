@@ -27,6 +27,9 @@
 // 0 <= nums[i] <= n
 // All the numbers of nums are unique.
 
+#include <vector>
+using namespace std;
+
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
