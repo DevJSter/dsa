@@ -35,3 +35,16 @@ n == nums.length
 1 <= n <= 104
 0 <= nums[i] <= n
 All the numbers of nums are unique.
+
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        int missingNumber = nums.size(); // Initialize with n, as the array contains n distinct numbers.
+        
+        for (int i = 0; i < nums.size(); ++i) {
+            missingNumber ^= i ^ nums[i];
+        }
+        
+        return missingNumber;
+    }
+};
