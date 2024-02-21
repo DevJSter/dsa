@@ -29,3 +29,15 @@
 // Constraints:
 
 // 0 <= left <= right <= 231 - 1
+
+
+class Solution {
+public:
+    int rangeBitwiseAnd(int left, int right) {
+        while(right > left) {
+            right = right & (right-1);
+        }
+        
+        return right;
+    }
+};
