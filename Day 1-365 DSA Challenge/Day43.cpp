@@ -70,3 +70,26 @@ public:
         return -1;  // No town judge found
     }
 };
+
+
+int main() {
+    Solution solution;
+
+    // Example 1
+    int n1 = 2;
+    std::vector<std::vector<int>> trust1 = {{1, 2}};
+    int result1 = solution.findJudge(n1, trust1);  // Output: 2
+
+    // Example 2
+    int n2 = 3;
+    std::vector<std::vector<int>> trust2 = {{1, 3}, {2, 3}};
+    int result2 = solution.findJudge(n2, trust2);  // Output: 3
+
+    // Example 3
+    int n3 = 3;
+    std::vector<std::vector<int>> trust3 = {{1, 3}, {2, 3}, {3, 1}};
+    int result3 = solution.findJudge(n3, trust3);  // Output: -1
+
+    return 0;
+}
+
