@@ -92,7 +92,7 @@ public:
             
             for(auto& ngbr : adj[person]) {
                 int nextPerson = ngbr.first;
-                int t          = ngbr.second;
+                int t = ngbr.second;
                 
                 if(t >= time && earlySecretTime[nextPerson] > t) {
                     earlySecretTime[nextPerson] = t;
