@@ -59,6 +59,9 @@
 // 1 <= timei <= 105
 // 1 <= firstPerson <= n - 1
 
+#include <bits/stdc++.h>
+#include <vector>
+using namespace std;
 
 class Solution {
 public:
