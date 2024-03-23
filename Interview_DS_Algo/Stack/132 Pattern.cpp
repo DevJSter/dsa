@@ -9,7 +9,7 @@
 //T.C : O(n^3) - T.L.E : [94 / 103 test cases passed.]
 class Solution {
 public:
-    bool find132pattern(vector<int>& nums) {
+    bool find132pattern(vector<int>& nums ) {
         int n = nums.size();
         for(int i = 0; i<n; i++) {
             
@@ -144,3 +144,5 @@ class Solution {
         return false;
     }
 }
+
+
