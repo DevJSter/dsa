@@ -1,11 +1,3 @@
-/*
-    MY YOUTUBE VIDE ON THIS Qn  : https://www.youtube.com/watch?v=DMP2bqW6URA
-    Company Tags                : Google, Amazon, Facebook (Meta), Microsoft, Salesforce, Directi, MakeMyTrip, Nvidia, Yahoo
-    Leetcode Qn Link            : https://leetcode.com/problems/word-search-ii/
-    GfG Link                    : https://practice.geeksforgeeks.org/problems/72cf44eabd18006810efad06fbb623a0682acee2/1
-*/
-
-//Approach-1 (Using string in struct)
 class Solution {
 public:
     vector<string> result;
