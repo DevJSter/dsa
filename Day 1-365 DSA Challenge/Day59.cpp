@@ -98,7 +98,6 @@ public:
         vector<string> curr;
         
         backtrack(s, 0, curr, result);
-        
         return result;
         
     }
